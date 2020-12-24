@@ -1,45 +1,52 @@
-@import url('https://fonts.googleapis.com/css2?family=Bungee+Outline&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gentium+Book+Basic:ital@1&display=swap');
 
-@import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
+@font-face{
+    font-family: 'Tomb_Raider';
+    src: url('/Tomb_Raider.ttf') format('truetype');
+}
 
 *{
     box-sizing: border-box;
 }
 
 :root {
-    --primary: #f3f04def;
-    --secondary:#d2deee;
-    --button:#4488cc;
-    --black: #1f1e1e;
-    --white:#ffffff;
+    --primary: #ffffff;
+    --secondary:#bbf0da;
+    --green:#5fbe42;
+    --black: #000000;
+    --black-lg:#4745453b;
     --width-break:600px;
 }
 
 body{
     margin: 0;
     padding: 0;
-    font-family: 'Satisfy', cursive;
-    background-color: var(--white);
+    font-family: 'Gentium Book Basic', serif;
+    color: var(--primary);
+    background-color: var(--black);
+    background-image: url('/bg.jpg');
+    background-size: cover;
 }
 
 /*Nav Bar */
 .nav {
-    background-color: var(--primary);
+    background-color: var(--black-lg);
     padding: 0.5rem 0.5rem;
 }
 
 .nav .active-link {
-    color: var(--button);
     font-weight: bolder;
 }
 .nav .brand {
     font-weight: bolder;
-    font-size: 28px;
-    font-family: 'Bungee Outline', cursive;
+    font-size: 32px;
+    font-family: 'Tomb_Raider';
+    color: var(--green);
 }
 
 .nav ul{
     text-align: right;
+    color: var(--green);
 }
 .nav li {
     display: inline;
@@ -50,6 +57,12 @@ body{
     margin-top: 20px;
     padding: 2rem;
     text-align: center;
+    
+}
+
+.about-heading{
+    color: var(--green);
+    font-family: 'Tomb_Raider';
 }
 .hero {
     max-width: 470px;
@@ -84,7 +97,7 @@ textarea{
     margin: 0rem 1rem 1rem 0rem;
     font-size: large;
     font-family: inherit;
-    background-color: var(--button);
+    background-color: var(--green);
 }
 
 #tt-output{
@@ -95,13 +108,13 @@ textarea{
     margin-top: 2rem;
     font-size: large;
     overflow: scroll;
+    color: var(--black);
     border: 2px solid var(--black);
     background-color: var(--secondary);
 }
 
 footer {
-    text-align: center;
-  
+    text-align: center; 
 }
 
 footer li {
@@ -110,8 +123,9 @@ footer li {
     display: inline;  
 }
 
-footer p,a{    
+footer p,a{  
+    font-family: 'Tomb_Raider';  
     position: left;   
     text-decoration: none;
-    color: var(--button);
+    color: var(--green);
 }
